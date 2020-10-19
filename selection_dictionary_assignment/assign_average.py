@@ -4,6 +4,17 @@ def switch_average(key):
 
     }
 
+    try:
+        values = dictionary.get(key)
+        return calculate_average(values)
+
+    except:
+        raise ValueError
+
+
+def calculate_average(values):
+    return sum(values) / len(values)
+
 
 def main():
     user_input = input('Enter value A-D: ')
