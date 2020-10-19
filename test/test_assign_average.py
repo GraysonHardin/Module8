@@ -21,6 +21,12 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(actual, average)
 
+    def test_switch_average_given_D(self):
+        average = 5
+        actual = switch_average('D')
+
+        self.assertEqual(actual, average)
+
 
 if __name__ == '__main__':
     unittest.main()
