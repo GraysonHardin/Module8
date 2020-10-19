@@ -27,6 +27,11 @@ class MyTestCase(unittest.TestCase):
 
         self.assertEqual(actual, average)
 
+    def test_switch_average_given_invalid_key(self):
+        with self.assertRaises(ValueError):
+
+            switch_average('K')
+
 
 if __name__ == '__main__':
     unittest.main()
