@@ -2,7 +2,7 @@ def switch_average(key):
     dictionary = {
         'A': [5, 10, 15, 20],
         'B': [10, 20, 30, 40, 50],
-
+        'C': [1, 2, 3],
     }
 
     try:
