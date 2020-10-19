@@ -32,6 +32,11 @@ class MyTestCase(unittest.TestCase):
 
             switch_average('K')
 
+    def test_switch_average_given_invalid_integer(self):
+        with self.assertRaises(ValueError):
+
+            switch_average(-1)
+
 
 if __name__ == '__main__':
     unittest.main()
